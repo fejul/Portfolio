@@ -1,29 +1,30 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 const Navbar = () => {
 	const [ click, setClick ] = useState(false);
 
 	const handleClick = () => setClick(!click);
-
+	//??? Which link for logo? or App???
 	return (
-		<div>
+		<header>
 			<nav className="nav">
-				<a className="logo" href="index.html">
+				<Link className="logo" to="/">
 					JULIA FELLER
-				</a>
+				</Link>
 				<div>
 					<ul id="navbar" className={click ? '#navbar active' : '#navbar'}>
 						<li>
-							<a href="index.html">Home</a>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<a href="index.html">About</a>
+							<Link to="/about">About</Link>
 						</li>
 						<li>
-							<a href="index.html">Projects</a>
+							<Link to="/projects">Projects</Link>
 						</li>
 						<li>
-							<a href="index.html">Contact</a>
+							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
 				</div>
@@ -31,7 +32,7 @@ const Navbar = () => {
 					<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 				</div>
 			</nav>
-		</div>
+		</header>
 	);
 };
 

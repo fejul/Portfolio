@@ -1,3 +1,7 @@
+.active {
+	color: #ffec3c;
+}
+
 .nav {
 	display: flex;
 	align-items: center;

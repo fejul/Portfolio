@@ -5,7 +5,6 @@ const Navbar = () => {
 	const [ click, setClick ] = useState(false);
 
 	const handleClick = () => setClick(!click);
-	//??? Which link for logo? or App???
 	return (
 		<header>
 			<nav className="nav">

@@ -21,17 +21,18 @@ function App() {
 		<>
 			{loading ? (
 				<div className="preloader">
-					<DotLoader color={'#FFEC3C'} loading={loading} size={120} />
+					<DotLoader color={'var(--color-yellow)'} loading={loading} size={120} />
 				</div>
 			) : (
 				<Navbar />
 			)}
 			<Routes>
-				{/* ??? Route for / Home???? */}
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/contact" element={<Contact />} />
+			{/* 	If route does not exist, navigate to home
+				<Route path="*" element={"/"} /> */}
 			</Routes>
 		</>
 	);

@@ -1,1 +1,31 @@
+.introduction {
+	padding: 100px;
+	display: flex;
+}
 
+.introduction p,
+.contact {
+	justify-content: flex-start;
+	left: 150px;
+}
+
+.introduction p:nth-child(2) {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.introduction p:last-child {
+	font-size: 2rem;
+}
+
+.introduction a {
+	text-decoration: none;
+}
+
+.introduction img {
+	height: 400px;
+	width: 400px;
+	margin-left: 200px;
+	border-radius: 15%;
+	border: 2px solid yellow;
+}

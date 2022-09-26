@@ -5,12 +5,20 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--bg-color: #1f202b;
+	--bg-navbar: #191922;
+	--color-yellow: #ffec3c;
+	--color-yellow-hover: #fef698;
+	--text-color: #f2f2f2;
+}
+
 body {
-	background-color: #1f202b;
+	background-color: var(--bg-color);
 }
 
 .preloader {
-	background-color: #1f202b;
+	background-color: var(--bg-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;

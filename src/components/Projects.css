@@ -1,4 +1,4 @@
-section {
+.projects {
 	margin-top: 50px;
 }
 
@@ -6,7 +6,7 @@ h1,
 p {
 	display: flex;
 	justify-content: center;
-	color: #f2f2f2;
+	color: var(--text-color);
 	font-size: 1.5rem;
 }
 
@@ -28,12 +28,15 @@ p {
 }
 
 button {
+	color: var(--color-yellow);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 20px;
+	padding: 0.5rem 2rem;
 	margin-top: 20px;
-	border-radius: 10%;
+	border-radius: 25px;
+	background-color: transparent;
+	border: 3px solid var(--color-yellow);
 }
 
 button i {
@@ -41,8 +44,8 @@ button i {
 }
 
 button:hover {
-	background-color: #ffec3c;
-	box-shadow: 0 0 5px #ffec3c;
+	border: 3px solid var(--color-yellow-hover);
+	cursor: pointer;
 }
 
 .background1,
@@ -50,20 +53,20 @@ button:hover {
 .background3 {
 	height: 350px;
 	width: 350px;
-	background-color: #f2f2f2;
+	background-color: var(--text-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-section img {
+.projects img {
 	/*  justify-content: align-items?????; */
 	margin-left: 17.5px;
 	max-width: 90%;
 	height: auto;
 }
 
-section img:hover {
+.projects img:hover {
 	/* -moz-box-shadow: 0 0 30px rgb(148, 144, 144);
 	-webkit-box-shadow: 0 0 30px rgb(148, 144, 144); */
 	box-shadow: 0 0 30px rgb(148, 144, 144);
@@ -76,7 +79,7 @@ section img:hover {
 		flex-wrap: wrap;
 	}
 
-	p {
+	.projects > p {
 		text-align: center;
 	}
 

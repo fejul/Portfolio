@@ -2,6 +2,7 @@ import './Contact.css';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
 	const form = useRef();
 
@@ -18,6 +19,7 @@ const Contact = () => {
 		e.target.reset();
 	};
 	return (
+		<>
 		<div className="container">
 			<form className="contact-form" ref={form} onSubmit={sendEmail}>
 				<h3>Contact me</h3>
@@ -40,7 +42,6 @@ const Contact = () => {
 						<i class="fa-sharp fa-solid fa-location-dot" />
 					</span>
 					<h4>Location</h4>
-
 					<h5>Berlin, Germany</h5>
 				</div>
 				<div className="email">
@@ -48,7 +49,6 @@ const Contact = () => {
 						<i class="fa-solid fa-envelope" />
 					</span>
 					<h4>Email</h4>
-
 					<h5>
 						<a href="mailto:fellerjulia@icloud.com">fellerjulia@icloud.com</a>
 					</h5>
@@ -58,13 +58,30 @@ const Contact = () => {
 						<i class="fa-solid fa-phone" />
 					</span>
 					<h4>Phone</h4>
-
 					<h5>
 						<a href="tel:+49 151 55853403">+49 151 55853403</a>
 					</h5>
 				</div>
+				
 			</aside>
-		</div>
+			<div className="contact">
+				<ul className="icons">
+					<li>
+						<a href="https://github.com/fejul" target="_blank" rel="noreferrer">
+							<i class="fa-brands fa-github" />
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/fellerjulia" target="_blank" rel="noreferrer">
+							<i class="fa-brands fa-linkedin" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			
+	    </>
+		
 	);
 };
 

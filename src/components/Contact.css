@@ -21,13 +21,17 @@ input,
 textarea {
 	background-color: #20202b;
 	margin: 1rem 0.5rem 0.5rem 2rem;
-	border: 1px solid #999999;
+	border: 1px solid var(--input-color);
 	padding: 0.5rem;
 }
 
 .contact-form h3,
 .btn-send {
 	margin: 1rem 0.5rem 0.5rem 2rem;
+}
+
+.btn-send {
+	width: 25%;
 }
 
 input:focus,
@@ -41,6 +45,10 @@ textarea:focus {
 .contact-info {
 	color: var(--text-color);
 	margin-left: 4rem;
+}
+
+aside h5 {
+	color: var(--input-color);
 }
 
 .contact-info div {
@@ -63,4 +71,32 @@ textarea:focus {
 
 span i {
 	color: var(--color-yellow);
+}
+
+/* GitHub LinkedIn */
+.icons {
+	list-style: none;
+	font-size: 2rem;
+	color: var(--color-yellow);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	top: 280px;
+	left: 150px;
+}
+
+.icons::after {
+	content: "";
+	width: 1px;
+	height: 150px;
+	background-color: var(--color-yellow);
+}
+
+.icons i {
+	color: var(--color-yellow);
+}
+
+.icons i:hover {
+	color: var(--color-yellow-hover);
 }
